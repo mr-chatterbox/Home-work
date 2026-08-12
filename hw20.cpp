@@ -1,15 +1,9 @@
-#include<iostream>
-using namespace std;
-
 #include <iostream>
 using namespace std;
 
 int getNthFibonacci(int n) {
-    if (n <= 0) return 0;
-    if (n == 1) return 0;
-    if (n == 2) return 1;
-
-    int a = 0, b = 1;
+    int a = 0;
+    int b = 1;
     int nextnum = 0;
 
     for (int i = 1; i <= n - 2; i++) {
@@ -22,11 +16,7 @@ int getNthFibonacci(int n) {
 }
 
 int main() {
-    int n;
-    cin >> n;
-
-    int result = getNthFibonacci(n);
-    cout << result << endl;
-
+    int n = 10;
+    cout << getNthFibonacci(n) << endl;
     return 0;
 }
